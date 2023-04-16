@@ -1,0 +1,24 @@
+{
+  "name": "node-loves-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "npm run clean && tsc && npm run copy-files",
+    "clean": "rm -rf ./dist",
+    "copy-files": "cp ./src/public/input.json ./dist/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "date-fns": "^2.29.3",
+    "node-fetch": "^3.3.1"
+  }
+}

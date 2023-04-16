@@ -1,0 +1,1 @@
+export const apiUri = "https://developers.paysera.com/tasks/api";
